@@ -1,6 +1,6 @@
 # FIAP [154K parameter]
 
-About the code implementation of the paper “An Efficient Frequency-Aware Information Asymmetric Processing Network for Super-Lightweight Image Super-Resolution”
+This is an official implementation of the paper “An Efficient Frequency-Aware Information Asymmetric Processing Network for Super-Lightweight Image Super-Resolution”
 
 ## Dependencies
 
@@ -17,16 +17,11 @@ About the code implementation of the paper “An Efficient Frequency-Aware Infor
 
   
 ## How to Test
-1. Clone this github repo. 
-```
-git clone https://github.com/zhaohengyuan1/PAN.git
-cd PAN
-```
-2. Download the five test datasets (Set5, Set14, B100, Urban100, Manga109) from [Google Drive](https://drive.google.com/drive/folders/1lsoyAjsUEyp7gm1t6vZI9j7jr9YzKzcF?usp=sharing) 
+1. Download the five test datasets (Set5, Set14, B100, Urban100, Manga109) from [Google Drive](https://drive.google.com/drive/folders/1lsoyAjsUEyp7gm1t6vZI9j7jr9YzKzcF?usp=sharing) 
 
-3. Pretrained models have be placed in `./experiments/pretrained_models/` folder. More models can be download from [Google Drive](https://drive.google.com/drive/folders/1_zZqTvvAb_ad4T4-uiIGF9CkNiPrBXGr?usp=sharing).
+2. Three versions of pretrained models have be placed in `./pretrained/` folder. 
 
-4. Run test. We provide `x2,x3,x4` pretrained models.
+3. The test commands are placed in the './src/demo.sh' file.Run test. 
 ```
 cd codes
 python test.py -opt option/test/test_PANx4.yml
