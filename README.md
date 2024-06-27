@@ -19,7 +19,7 @@ pip install -r requirements.txt
 - This codes provide the testing, training, and SR image visualization code.
   
 ## How to Test
-1. Download the five test datasets (Set5, Set14, B100, Urban100, Manga109) from [Google Drive](https://drive.google.com/drive/folders/1lsoyAjsUEyp7gm1t6vZI9j7jr9YzKzcF?usp=sharing) 
+1. Download the five test datasets (Set5, Set14, B100, Urban100, Manga109) from [Google Drive](https://drive.google.com/drive/folders/1lsoyAjsUEyp7gm1t6vZI9j7jr9YzKzcF?usp=sharing) （需要换自己的链接）
 
 2. Three versions of pretrained models (FIAP-S, FIAP, and FIAP-L) have be placed in `./pretrained/` folder. 
 
@@ -34,7 +34,7 @@ More testing commonds can be found in `./src/demo.sh` file and the output result
 
 ## How to Train
 
-1. 下载 [DIV2K](https://data.vision.ee.ethz.ch/cvl/DIV2K/) from [Google Drive](https://drive.google.com/drive/folders/1B-uaxvV9qeuQ-t7MFiN1oEdA6dKnj2vW?usp=sharing) or [Baidu Drive](https://pan.baidu.com/s/1CFIML6KfQVYGZSNFrhMXmA)
+1. 下载 [DIV2K](https://data.vision.ee.ethz.ch/cvl/DIV2K/) from [Google Drive](https://drive.google.com/drive/folders/1B-uaxvV9qeuQ-t7MFiN1oEdA6dKnj2vW?usp=sharing) or [Baidu Drive](https://pan.baidu.com/s/1CFIML6KfQVYGZSNFrhMXmA) （需要换自己的链接）
 
 2. Modify the training dataset path attributes '--dir_data' and '--data_train' in the `./src/option.py` file.
 
@@ -49,7 +49,7 @@ python main.py --model FIAP_6BLOCK --save ./train/FIAP-S_Div2k_x2 --scale 2 --lr
 Email: fjs1867@mnnu.edu.cn
 
 
-If you find our work is useful, please kindly cite it.
+If you find our work is useful, please kindly cite it.（需要换自己文章的引用）
 ```
 cite code
 ```
