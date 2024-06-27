@@ -26,7 +26,7 @@ pip install -r requirements.txt
 3. The testing commands are placed in the './src/demo.sh' file. 
 Close comments in 'demo.sh' and run 'demo.sh' to execute the corresponding command of testing. Such as:
 ```
-python main.py --model FIAP_6BLOCK --save FIAP-S_Div2k_tiny_x2 --scale 2 --n_feats 32 --pre_train /Your_path/experiment/FIAP-S_Div2k_tiny_x2/model/model_best.pt --data_test Set5+Set14+B100+Urban100+Manga109 --test_only
+python main.py --model FIAP_6BLOCK --save ./test/FIAP-S_Div2k_tiny_x2 --scale 2 --n_feats 32 --pre_train /Your_Path/FIAP/pretrained/FIAP-S_Div2k/fiaps_x2.pt --data_test Set5+Set14+B100+Urban100+Manga109 --test_only
 ```
 If you need to change the values of other properties and see what they mean, check out './src/option.py' file.
 
@@ -41,9 +41,9 @@ More testing commonds can be found in `./src/demo.sh` file and the output result
 3. The training commands are placed in the './src/demo.sh' file.
 Close comments in 'demo.sh' and run 'demo.sh' to execute the corresponding command of training. Such as:
 ```
-python main.py --model FIAP_6BLOCK --save FIAP-S_Div2k_x2 --scale 2 --lr 6e-4 --batch_size 32 --patch_size 128 --n_feats 32 --decay 200-400-600-800 --data_test Set5 --reset --epoch=1000
+python main.py --model FIAP_6BLOCK --save ./train/FIAP-S_Div2k_x2 --scale 2 --lr 6e-4 --batch_size 32 --patch_size 128 --n_feats 32 --decay 200-400-600-800 --data_test Set5 --reset --epoch=1000
 ```
-4. More training commond can be found in `./codes/run_scripts.sh` file.
+4. More training commond can be found in `./src/demo.sh` file, and the training results will be sorted in `./experiment/train/`.
 
 ## Testing the Parameters, Mult-Adds and Running Time
 
