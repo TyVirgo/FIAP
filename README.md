@@ -45,35 +45,9 @@ python main.py --model FIAP_6BLOCK --save ./train/FIAP-S_Div2k_x2 --scale 2 --lr
 ```
 4. More training commond can be found in `./src/demo.sh` file, and the training results will be sorted in `./experiment/train/`.
 
-## Testing the Parameters, Mult-Adds and Running Time
-
-1. Testing the parameters and Mult-Adds.
-```
-python test_summary.py
-```
-
-2. Testing the Running Time.
-
-```
-python test_running_time.py
-```
-
-## Related Work on AIM2020
-Enhanced Quadratic Video Interpolation (winning solution of AIM2020 VTSR Challenge)
-[paper](https://arxiv.org/pdf/2009.04642.pdf) | [code](https://github.com/lyh-18/EQVI)
-
 ## Contact
-Email: hubylidayuan@gmail.com
+Email: fjs1867@mnnu.edu.cn
 
 If you find our work is useful, please kindly cite it.
-```
-@inproceedings{zhao2020efficient,
-  title={Efficient image super-resolution using pixel attention},
-  author={Zhao, Hengyuan and Kong, Xiangtao and He, Jingwen and Qiao, Yu and Dong, Chao},
-  booktitle={European Conference on Computer Vision},
-  pages={56--72},
-  year={2020},
-  organization={Springer}
-}
-```
+
 
