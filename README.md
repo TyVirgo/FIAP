@@ -16,7 +16,7 @@ pip install -r requirements.txt
 ```
 
 # Codes 
-- This codes provide the testing, training, and SR image visualization code.
+- This codes provide the testing and training code.
   
 ## How to Test
 1. Download the five test datasets (Set5, Set14, B100, Urban100, Manga109) from [Google Drive](https://drive.google.com/drive/folders/1lsoyAjsUEyp7gm1t6vZI9j7jr9YzKzcF?usp=sharing) （需要换自己的链接）
@@ -44,6 +44,10 @@ Close comments in 'demo.sh' and run 'demo.sh' to execute the corresponding comma
 python main.py --model FIAP_6BLOCK --save ./train/FIAP-S_Div2k_x2 --scale 2 --lr 6e-4 --batch_size 32 --patch_size 128 --n_feats 32 --decay 200-400-600-800 --data_test Set5 --reset --epoch=1000
 ```
 4. More training commond can be found in `./src/demo.sh` file, and the training results will be sorted in `./experiment/train/`.
+
+## SR images visualization
+1. We provided visualization of SR images for two versions of the model ( FIAP and FIAP-L)
+（需要换自己可视化云盘的链接）
 
 ## Contact
 Email: fjs1867@mnnu.edu.cn
