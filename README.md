@@ -27,15 +27,13 @@ Close comments in 'demo.sh' and run 'demo.sh' to execute the corresponding comma
 cd codes
 python main.py --model FIAP_6BLOCK --save FIAP-S_Div2k_tiny_x2 --scale 2 --n_feats 32 --pre_train /Your_path/experiment/FIAP-S_Div2k_tiny_x2/model/model_best.pt --data_test Set5+Set14+B100+Urban100+Manga109 --test_only
 ```
-If you need to change the values of other properties and see what they mean, check out './src/option.py' file.(For example: train/test dataset path, number of Gpus, and optimization parameters)
+If you need to change the values of other properties and see what they mean, check out './src/option.py' file.
 
-More testing commonds can be found in `./src/demo.sh` file.
-
-5. The output results will be sorted in `./experiment/test/`.
+More testing commonds can be found in `./src/demo.sh` file and the output results will be sorted in `./experiment/test/`.
 
 ## How to Train
 
-1. Download [DIV2K](https://data.vision.ee.ethz.ch/cvl/DIV2K/) and [Flickr2K](https://github.com/LimBee/NTIRE2017) from [Google Drive](https://drive.google.com/drive/folders/1B-uaxvV9qeuQ-t7MFiN1oEdA6dKnj2vW?usp=sharing) or [Baidu Drive](https://pan.baidu.com/s/1CFIML6KfQVYGZSNFrhMXmA)
+1. 下载 [DIV2K](https://data.vision.ee.ethz.ch/cvl/DIV2K/) and [Flickr2K](https://github.com/LimBee/NTIRE2017) from [Google Drive](https://drive.google.com/drive/folders/1B-uaxvV9qeuQ-t7MFiN1oEdA6dKnj2vW?usp=sharing) or [Baidu Drive](https://pan.baidu.com/s/1CFIML6KfQVYGZSNFrhMXmA)
 
 2. Generate Training patches. Modified the path of your training datasets in `./codes/data_scripts/extract_subimages.py` file.
 
