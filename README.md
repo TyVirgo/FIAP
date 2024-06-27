@@ -4,13 +4,15 @@ This is an official implementation of the paper “An Efficient Frequency-Aware 
 
 ## Dependencies
 
+- The cuda version used in the project is 12.2
 - Python = 3.8 (Recommend to use [Anaconda](https://www.anaconda.com/download/#linux))
 ```
 conda create -n your_env_name python=3.8
+conda activate your_env_name
 ```
 - Other packages required by the project are in the file ‘requirements.txt’
 ```
-pip install -r requirement.txt
+pip install -r requirements.txt
 ```
 
 # Codes 
