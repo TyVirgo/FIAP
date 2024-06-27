@@ -30,7 +30,8 @@ python main.py --model FIAP_6BLOCK --save FIAP-S_Div2k_tiny_x2 --scale 2 --n_fea
 If you need to change the values of other properties and see what they mean, check out './src/option.py' file.(For example: train/test dataset path, number of Gpus, and optimization parameters)
 
 More testing commonds can be found in `./src/demo.sh` file.
-5. The output results will be sorted in `./results`. (We have been put our testing log file in `./results`) We also provide our testing results on five benchmark datasets on [Google Drive](https://drive.google.com/drive/folders/1F6unBkp6L1oJb_gOgSHYM5ZZbyLImDPH?usp=sharing).
+
+5. The output results will be sorted in `./experiment/test/`.
 
 ## How to Train
 
