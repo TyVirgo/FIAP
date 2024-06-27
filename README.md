@@ -16,10 +16,8 @@ pip install -r requirements.txt
 ```
 
 # Codes 
-- Our codes version based on [mmsr](https://github.com/open-mmlab/mmsr). 
+- Our codes version based on EDSR. 
 - This codes provide the testing and training code.
-
-
   
 ## How to Test
 1. Download the five test datasets (Set5, Set14, B100, Urban100, Manga109) from [Google Drive](https://drive.google.com/drive/folders/1lsoyAjsUEyp7gm1t6vZI9j7jr9YzKzcF?usp=sharing) 
