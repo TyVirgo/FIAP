@@ -48,6 +48,15 @@ python main.py --model FIAP_6BLOCK --save ./train/FIAP-S_Div2k_x2 --scale 2 --lr
 ## Contact
 Email: fjs1867@mnnu.edu.cn
 
+
 If you find our work is useful, please kindly cite it.
+```
+cite code
+```
+
+## License
+This project is released under the Apache 2.0 license.
 
 
+## Acknowledgements
+This code is built on [EDSR-PyTorch](https://github.com/sanghyun-son/EDSR-PyTorch). Thanks for the awesome work.
