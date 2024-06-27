@@ -5,10 +5,13 @@ This is an official implementation of the paper “An Efficient Frequency-Aware 
 ## Dependencies
 
 - Python = 3.8 (Recommend to use [Anaconda](https://www.anaconda.com/download/#linux))
-- [PyTorch >= 1.5.0](https://pytorch.org/)
-- NVIDIA GPU + [CUDA](https://developer.nvidia.com/cuda-downloads)
-- Python packages: `pip install numpy opencv-python lmdb`
-- [option] Python packages: [`pip install tensorboardX`](https://github.com/lanpa/tensorboardX), for visualizing curves.
+```
+conda create -n your_env_name python=3.8
+```
+- Other packages required by the project are in the file ‘requirements.txt’
+```
+pip install -r requirement.txt
+```
 
 # Codes 
 - Our codes version based on [mmsr](https://github.com/open-mmlab/mmsr). 
@@ -24,7 +27,6 @@ This is an official implementation of the paper “An Efficient Frequency-Aware 
 3. The testing commands are placed in the './src/demo.sh' file. 
 Close comments in 'demo.sh' and run 'demo.sh' to execute the corresponding command of testing. Such as:
 ```
-cd codes
 python main.py --model FIAP_6BLOCK --save FIAP-S_Div2k_tiny_x2 --scale 2 --n_feats 32 --pre_train /Your_path/experiment/FIAP-S_Div2k_tiny_x2/model/model_best.pt --data_test Set5+Set14+B100+Urban100+Manga109 --test_only
 ```
 If you need to change the values of other properties and see what they mean, check out './src/option.py' file.
