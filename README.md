@@ -4,7 +4,7 @@ This is an official implementation of the paper “An Efficient Frequency-Aware 
 
 ## Dependencies
 
-- Python >= 3.6 (Recommend to use [Anaconda](https://www.anaconda.com/download/#linux))
+- Python = 3.8 (Recommend to use [Anaconda](https://www.anaconda.com/download/#linux))
 - [PyTorch >= 1.5.0](https://pytorch.org/)
 - NVIDIA GPU + [CUDA](https://developer.nvidia.com/cuda-downloads)
 - Python packages: `pip install numpy opencv-python lmdb`
@@ -21,7 +21,7 @@ This is an official implementation of the paper “An Efficient Frequency-Aware 
 
 2. Three versions of pretrained models (FIAP-S, FIAP, and FIAP-L) have be placed in `./pretrained/` folder. 
 
-3. The test commands are placed in the './src/demo.sh' file. 
+3. The testing commands are placed in the './src/demo.sh' file. 
 Close comments in 'demo.sh' and run 'demo.sh' to execute the corresponding command of testing. Such as:
 ```
 cd codes
@@ -35,12 +35,12 @@ More testing commonds can be found in `./src/demo.sh` file and the output result
 
 1. 下载 [DIV2K](https://data.vision.ee.ethz.ch/cvl/DIV2K/) from [Google Drive](https://drive.google.com/drive/folders/1B-uaxvV9qeuQ-t7MFiN1oEdA6dKnj2vW?usp=sharing) or [Baidu Drive](https://pan.baidu.com/s/1CFIML6KfQVYGZSNFrhMXmA)
 
-2. Modified the path of your training datasets in `./codes/data_scripts/extract_subimages.py` file.
+2. Modify the training dataset path attributes '--dir_data' and '--data_train' in the `./src/option.py` file.
 
-3. Run Training.
-
+3. The training commands are placed in the './src/demo.sh' file.
+Close comments in 'demo.sh' and run 'demo.sh' to execute the corresponding command of training. Such as:
 ```
-python train.py -opt options/train/train_PANx4.yml
+python main.py --model FIAP_6BLOCK --save FIAP-S_Div2k_x2 --scale 2 --lr 6e-4 --batch_size 32 --patch_size 128 --n_feats 32 --decay 200-400-600-800 --data_test Set5 --reset --epoch=1000
 ```
 4. More training commond can be found in `./codes/run_scripts.sh` file.
 
