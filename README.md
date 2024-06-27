@@ -33,9 +33,9 @@ More testing commonds can be found in `./src/demo.sh` file and the output result
 
 ## How to Train
 
-1. 下载 [DIV2K](https://data.vision.ee.ethz.ch/cvl/DIV2K/) and [Flickr2K](https://github.com/LimBee/NTIRE2017) from [Google Drive](https://drive.google.com/drive/folders/1B-uaxvV9qeuQ-t7MFiN1oEdA6dKnj2vW?usp=sharing) or [Baidu Drive](https://pan.baidu.com/s/1CFIML6KfQVYGZSNFrhMXmA)
+1. 下载 [DIV2K](https://data.vision.ee.ethz.ch/cvl/DIV2K/) from [Google Drive](https://drive.google.com/drive/folders/1B-uaxvV9qeuQ-t7MFiN1oEdA6dKnj2vW?usp=sharing) or [Baidu Drive](https://pan.baidu.com/s/1CFIML6KfQVYGZSNFrhMXmA)
 
-2. Generate Training patches. Modified the path of your training datasets in `./codes/data_scripts/extract_subimages.py` file.
+2. Modified the path of your training datasets in `./codes/data_scripts/extract_subimages.py` file.
 
 3. Run Training.
 
