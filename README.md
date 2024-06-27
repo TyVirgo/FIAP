@@ -19,14 +19,17 @@ This is an official implementation of the paper “An Efficient Frequency-Aware 
 ## How to Test
 1. Download the five test datasets (Set5, Set14, B100, Urban100, Manga109) from [Google Drive](https://drive.google.com/drive/folders/1lsoyAjsUEyp7gm1t6vZI9j7jr9YzKzcF?usp=sharing) 
 
-2. Three versions of pretrained models have be placed in `./pretrained/` folder. 
+2. Three versions of pretrained models (FIAP-S, FIAP, and FIAP-L) have be placed in `./pretrained/` folder. 
 
-3. The test commands are placed in the './src/demo.sh' file.Run test. 
+3. The test commands are placed in the './src/demo.sh' file. 
+Close comments in 'demo.sh' and run 'demo.sh' to execute the corresponding command of testing. Such as:
 ```
 cd codes
-python test.py -opt option/test/test_PANx4.yml
+python main.py --model FIAP_6BLOCK --save FIAP-S_Div2k_tiny_x2 --scale 2 --n_feats 32 --pre_train /Your_path/experiment/FIAP-S_Div2k_tiny_x2/model/model_best.pt --data_test Set5+Set14+B100+Urban100+Manga109 --test_only
 ```
-More testing commonds can be found in `./codes/run_scripts.sh` file.
+If you need to change the values of other properties and see what they mean, check out './src/option.py' file.(For example: train/test dataset path, number of Gpus, and optimization parameters)
+
+More testing commonds can be found in `./src/demo.sh` file.
 5. The output results will be sorted in `./results`. (We have been put our testing log file in `./results`) We also provide our testing results on five benchmark datasets on [Google Drive](https://drive.google.com/drive/folders/1F6unBkp6L1oJb_gOgSHYM5ZZbyLImDPH?usp=sharing).
 
 ## How to Train
