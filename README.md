@@ -43,7 +43,7 @@ Close comments in 'demo.sh' and run 'demo.sh' to execute the corresponding comma
 ```
 python main.py --model FIAP_6BLOCK --save ./train/FIAP-S_Div2k_x2 --scale 2 --lr 6e-4 --batch_size 32 --patch_size 128 --n_feats 32 --decay 200-400-600-800 --data_test Set5 --reset --epoch=1000
 ```
-4. More training commond can be found in `./src/demo.sh` file, and the training results will be sorted in `./experiment/train/`.
+4. More training commond can be found in `./src/demo.sh` file, and the training results will be sorted in `./experiment/train/`
 
 ## SR images visualization
 1. We provided visualization of SR images for two versions of the model ( FIAP and FIAP-L)
