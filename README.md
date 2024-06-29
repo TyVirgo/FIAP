@@ -47,7 +47,7 @@ python main.py --model FIAP_6BLOCK --save ./train/FIAP-S_Div2k_x2 --scale 2 --lr
 
 ## SR images visualization
 1. We provided visualization of SR images for two versions of the model ( FIAP and FIAP-L)
-（需要换自己可视化云盘的链接）
+   [Baidu Drive](https://pan.baidu.com/s/1CFIML6KfQVYGZSNFrhMXmA)
 
 ## Contact
 Email: fjs1867@mnnu.edu.cn
