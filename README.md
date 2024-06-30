@@ -19,7 +19,7 @@ pip install -r requirements.txt
 - This codes provide the testing and training code.
   
 ## How to Test
-1. Download the five test datasets (Set5, Set14, B100, Urban100, Manga109) from [Google Drive](https://drive.google.com/drive/folders/1yyc9RIGdl9AKmvyyBySOjtQ00k2qNVNn?usp=sharing) or [Baidu Drive](https://pan.baidu.com/s/1ai293PGoe_MmkKNKOBdkPg)(code:gd0o)
+1. Download the five test datasets (Set5, Set14, B100, Urban100, Manga109) from [Google Drive](https://drive.google.com/drive/folders/1yyc9RIGdl9AKmvyyBySOjtQ00k2qNVNn?usp=sharing) or [Baidu Drive](https://pan.baidu.com/s/1ai293PGoe_MmkKNKOBdkPg) (code:gd0o)
   
 
 
@@ -36,7 +36,7 @@ More testing commonds can be found in `./src/demo.sh` file and the output result
 
 ## How to Train
 
-1. 下载 [DIV2K](https://data.vision.ee.ethz.ch/cvl/DIV2K/) from [Google Drive](https://drive.google.com/drive/folders/1B-uaxvV9qeuQ-t7MFiN1oEdA6dKnj2vW?usp=sharing) or [Baidu Drive](https://pan.baidu.com/s/1zOzr8S9qvm1hwZl-pF1RTw ) （code:hir6）
+1. 下载 [DIV2K](https://data.vision.ee.ethz.ch/cvl/DIV2K/) from [Google Drive](https://drive.google.com/drive/folders/1B-uaxvV9qeuQ-t7MFiN1oEdA6dKnj2vW?usp=sharing) or [Baidu Drive](https://pan.baidu.com/s/1zOzr8S9qvm1hwZl-pF1RTw ) (code:hir6)
 
 3. Modify the training dataset path attributes '--dir_data' and '--data_train' in the `./src/option.py` file.
 
@@ -48,8 +48,7 @@ python main.py --model FIAP_6BLOCK --save ./train/FIAP-S_Div2k_x2 --scale 2 --lr
 4. More training commond can be found in `./src/demo.sh` file, and the training results will be sorted in `./experiment/train/`
 
 ## SR images visualization
-1. We provided visualization of SR images for two versions of the model ( FIAP and FIAP-L)
-   [Baidu Drive](https://pan.baidu.com/s/1vEOJaLGScgRGaIOeFI3q8w) (code：s8eg)
+1. We provided visualization of SR images for two versions of the model ( FIAP and FIAP-L) from [Google Drive](https://drive.google.com/drive/folders/1yyc9RIGdl9AKmvyyBySOjtQ00k2qNVNn?usp=sharing) or [Baidu Drive](https://pan.baidu.com/s/1vEOJaLGScgRGaIOeFI3q8w) (code：s8eg)
 
 ## Contact
 Email: fjs1867@mnnu.edu.cn
