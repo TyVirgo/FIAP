@@ -30,7 +30,7 @@ python main.py --model FIAP_6BLOCK --save ./test/FIAP-S_Div2k_tiny_x2 --scale 2 
 ```
 If you need to change the values of other properties and see what they mean, check out './src/option.py' file.
 
-4.More testing commonds can be found in `./src/demo.sh` file and the output results will be sorted in `./experiment/test/`
+4. More testing commonds can be found in `./src/demo.sh` file and the output results will be sorted in `./experiment/test/`
 
 ## How to Train
 
