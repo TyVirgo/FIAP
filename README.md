@@ -35,11 +35,11 @@ More testing commonds can be found in `./src/demo.sh` file and the output result
 
 ## How to Train
 
-1. 下载 [DIV2K](https://data.vision.ee.ethz.ch/cvl/DIV2K/) from [Google Drive](https://drive.google.com/drive/folders/1B-uaxvV9qeuQ-t7MFiN1oEdA6dKnj2vW?usp=sharing) or [Baidu Drive](https://pan.baidu.com/s/1CFIML6KfQVYGZSNFrhMXmA) （需要换自己的链接）
+1. 下载 [DIV2K](https://data.vision.ee.ethz.ch/cvl/DIV2K/) from [Google Drive](https://drive.google.com/drive/folders/1B-uaxvV9qeuQ-t7MFiN1oEdA6dKnj2vW?usp=sharing) or [Baidu Drive](https://pan.baidu.com/s/1zOzr8S9qvm1hwZl-pF1RTw ) （code:hir6）
 
-2. Modify the training dataset path attributes '--dir_data' and '--data_train' in the `./src/option.py` file.
+3. Modify the training dataset path attributes '--dir_data' and '--data_train' in the `./src/option.py` file.
 
-3. The training commands are placed in the './src/demo.sh' file.
+4. The training commands are placed in the './src/demo.sh' file.
 Close comments in 'demo.sh' and run 'demo.sh' to execute the corresponding command of training. Such as:
 ```
 python main.py --model FIAP_6BLOCK --save ./train/FIAP-S_Div2k_x2 --scale 2 --lr 6e-4 --batch_size 32 --patch_size 128 --n_feats 32 --decay 200-400-600-800 --data_test Set5 --reset --epoch=1000
