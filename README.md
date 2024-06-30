@@ -19,11 +19,14 @@ pip install -r requirements.txt
 - This codes provide the testing and training code.
   
 ## How to Test
-1. Download the five test datasets (Set5, Set14, B100, Urban100, Manga109) from [Google Drive](https://drive.google.com/drive/folders/1lsoyAjsUEyp7gm1t6vZI9j7jr9YzKzcF?usp=sharing) （需要换自己的链接）
+1. Download the five test datasets (Set5, Set14, B100, Urban100, Manga109) from [Google Drive](https://drive.google.com/drive/folders/1lsoyAjsUEyp7gm1t6vZI9j7jr9YzKzcF?usp=sharing) 或 [Baidu Drive](https://pan.baidu.com/s/1CFIML6KfQVYGZSNFrhMXmA)
+链接：https://pan.baidu.com/s/1ai293PGoe_MmkKNKOBdkPg 
+提取码：gd0o
 
-2. Three versions of pretrained models (FIAP-S, FIAP, and FIAP-L) have be placed in `./pretrained/` folder. 
 
-3. The testing commands are placed in the './src/demo.sh' file. 
+3. Three versions of pretrained models (FIAP-S, FIAP, and FIAP-L) have be placed in `./pretrained/` folder. 
+
+4. The testing commands are placed in the './src/demo.sh' file. 
 Close comments in 'demo.sh' and run 'demo.sh' to execute the corresponding command of testing. Such as:
 ```
 python main.py --model FIAP_6BLOCK --save ./test/FIAP-S_Div2k_tiny_x2 --scale 2 --n_feats 32 --pre_train /Your_Path/FIAP/pretrained/FIAP-S_Div2k/fiaps_x2.pt --data_test Set5+Set14+B100+Urban100+Manga109 --test_only
