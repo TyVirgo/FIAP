@@ -20,19 +20,17 @@ pip install -r requirements.txt
   
 ## How to Test
 1. Download the five test datasets (Set5, Set14, B100, Urban100, Manga109) from [Google Drive](https://drive.google.com/drive/folders/1yyc9RIGdl9AKmvyyBySOjtQ00k2qNVNn?usp=sharing) or [Baidu Drive](https://pan.baidu.com/s/1ai293PGoe_MmkKNKOBdkPg) (code:gd0o)
-  
 
+2. Three versions of pretrained models (FIAP-S, FIAP, and FIAP-L) have be placed in `./pretrained/` folder. 
 
-3. Three versions of pretrained models (FIAP-S, FIAP, and FIAP-L) have be placed in `./pretrained/` folder. 
-
-4. The testing commands are placed in the './src/demo.sh' file. 
+3. The testing commands are placed in the './src/demo.sh' file. 
 Close comments in 'demo.sh' and run 'demo.sh' to execute the corresponding command of testing. Such as:
 ```
 python main.py --model FIAP_6BLOCK --save ./test/FIAP-S_Div2k_tiny_x2 --scale 2 --n_feats 32 --pre_train /Your_Path/FIAP/pretrained/FIAP-S_Div2k/fiaps_x2.pt --data_test Set5+Set14+B100+Urban100+Manga109 --test_only
 ```
 If you need to change the values of other properties and see what they mean, check out './src/option.py' file.
 
-More testing commonds can be found in `./src/demo.sh` file and the output results will be sorted in `./experiment/test/`
+4.More testing commonds can be found in `./src/demo.sh` file and the output results will be sorted in `./experiment/test/`
 
 ## How to Train
 
