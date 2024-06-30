@@ -19,9 +19,7 @@ pip install -r requirements.txt
 - This codes provide the testing and training code.
   
 ## How to Test
-1. Download the five test datasets (Set5, Set14, B100, Urban100, Manga109) from [Google Drive](https://drive.google.com/drive/folders/1lsoyAjsUEyp7gm1t6vZI9j7jr9YzKzcF?usp=sharing) 或 [Baidu Drive](https://pan.baidu.com/s/1CFIML6KfQVYGZSNFrhMXmA)
-链接：https://pan.baidu.com/s/1ai293PGoe_MmkKNKOBdkPg 
-提取码：gd0o
+1. Download the five test datasets (Set5, Set14, B100, Urban100, Manga109) from [Google Drive](https://drive.google.com/drive/folders/1lsoyAjsUEyp7gm1t6vZI9j7jr9YzKzcF?usp=sharing) or [Baidu Drive](https://pan.baidu.com/s/1ai293PGoe_MmkKNKOBdkPg)(code:gd0o)
 
 
 3. Three versions of pretrained models (FIAP-S, FIAP, and FIAP-L) have be placed in `./pretrained/` folder. 
