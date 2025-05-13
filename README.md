@@ -52,7 +52,7 @@ python main.py --model HIGAN_6BLOCK --save ./train/HIGAN-S_Div2k_x2 --scale 2 --
 Email: fjs1867@mnnu.edu.cn
 
 
-If you find our work is useful, please kindly cite it.（需要换自己文章的引用）
+If you find our work is useful, please kindly cite it.
 ```
 cite code
 ```
