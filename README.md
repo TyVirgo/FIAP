@@ -21,12 +21,12 @@ pip install -r requirements.txt
 ## How to Test
 1. Download the five test datasets (Set5, Set14, B100, Urban100, Manga109) from [Google Drive](https://drive.google.com/drive/folders/1lsoyAjsUEyp7gm1t6vZI9j7jr9YzKzcF?usp=sharing)
 
-2. Three versions of pretrained models (FIAP-S, FIAP, and FIAP-L) have be placed in `./pretrained/` folder. 
+2. Three versions of pretrained models (HIGAN-S, HIGAN, and HIGAN-L) have be placed in `./pretrained/` folder. 
 
 3. The testing commands are placed in the './src/demo.sh' file. 
 Close comments in 'demo.sh' and run 'demo.sh' to execute the corresponding command of testing. Such as:
 ```
-python main.py --model FIAP_6BLOCK --save ./test/FIAP-S_Div2k_tiny_x2 --scale 2 --n_feats 32 --pre_train /Your_Path/FIAP/pretrained/FIAP-S_Div2k/fiaps_x2.pt --data_test Set5+Set14+B100+Urban100+Manga109 --test_only
+python main.py --model HIGAN_6BLOCK --save ./test/HIGAN-S_Div2k_tiny_x2 --scale 2 --n_feats 32 --pre_train /Your_Path/HIGAN/pretrained/HIGAN-S_Div2k/higans_x2.pt --data_test Set5+Set14+B100+Urban100+Manga109 --test_only
 ```
 If you need to change the values of other properties and see what they mean, check out './src/option.py' file.
 
@@ -41,12 +41,12 @@ If you need to change the values of other properties and see what they mean, che
 4. The training commands are placed in the './src/demo.sh' file.
 Close comments in 'demo.sh' and run 'demo.sh' to execute the corresponding command of training. Such as:
 ```
-python main.py --model FIAP_6BLOCK --save ./train/FIAP-S_Div2k_x2 --scale 2 --lr 6e-4 --batch_size 32 --patch_size 128 --n_feats 32 --decay 200-400-600-800 --data_test Set5 --reset --epoch=1000
+python main.py --model HIGAN_6BLOCK --save ./train/HIGAN-S_Div2k_x2 --scale 2 --lr 6e-4 --batch_size 32 --patch_size 128 --n_feats 32 --decay 200-400-600-800 --data_test Set5 --reset --epoch=1000
 ```
 4. More training commond can be found in `./src/demo.sh` file, and the training results will be sorted in `./experiment/train/`
 
 ## SR images visualization
-1. We provided visualization of SR images for two versions of the model ( FIAP and FIAP-L) from [Google Drive](https://drive.google.com/drive/folders/1xiPOE22AExEcIe5-er3clOYFHCVCJo6F?usp=sharing) or [Baidu Drive](https://pan.baidu.com/s/1vEOJaLGScgRGaIOeFI3q8w) (code：s8eg)
+1. We provided visualization of SR images for two versions of the model ( HIGAN and HIGAN-L) from [Google Drive](https://drive.google.com/drive/folders/1xiPOE22AExEcIe5-er3clOYFHCVCJo6F?usp=sharing) or [Baidu Drive](https://pan.baidu.com/s/1vEOJaLGScgRGaIOeFI3q8w) (code：s8eg)
 
 ## Contact
 Email: fjs1867@mnnu.edu.cn
