@@ -1,6 +1,6 @@
-# FIAP [154K parameter]
+# HIGAN [154K parameter]
 
-This is an official implementation of the paper “An Efficient Frequency-Aware Information Asymmetric Processing Network for Super-Lightweight Image Super-Resolution”
+This is an official implementation of the paper “A high-frequency information guiding attention network for super-lightweight image super-resolution”
 
 ## Dependencies
 
