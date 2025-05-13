@@ -34,7 +34,7 @@ If you need to change the values of other properties and see what they mean, che
 
 ## How to Train
 
-1. 下载 [DIV2K](https://data.vision.ee.ethz.ch/cvl/DIV2K/) from [Here](https://cv.snu.ac.kr/research/EDSR/DIV2K.tar) 
+1. Download [DIV2K](https://data.vision.ee.ethz.ch/cvl/DIV2K/) from [Here](https://cv.snu.ac.kr/research/EDSR/DIV2K.tar) 
 
 3. Modify the training dataset path attributes '--dir_data' and '--data_train' in the `./src/option.py` file.
 
