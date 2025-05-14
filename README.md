@@ -1,4 +1,4 @@
-# HIGAN [154K parameter]
+# HIGAN [154K parameter]、HIGAN-S [101K parameter]
 
 This is an official implementation of the paper “A high-frequency information guiding attention network for super-lightweight image super-resolution”.
 We will continue to improve the code later.
