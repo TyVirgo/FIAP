@@ -45,7 +45,7 @@ Email: fjs1867@mnnu.edu.cn
 
 If you find our work is useful, please kindly cite it.
 ```
-cite code
+Upload in the future
 ```
 
 ## License
