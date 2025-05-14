@@ -33,6 +33,10 @@ pip install -r requirements.txt
 
 4. The output results will be sorted in `./experiment/test/`.
 
+## Network quantitative comparison
+![image](https://github.com/user-attachments/assets/fd447332-158e-4ea7-8e96-ade01af59137)
+
+
 ## SR images visualization
 1. We provided visualization of SR images for two versions of the model ( HIGAN and HIGAN-L) from [Google Drive](https://drive.google.com/drive/folders/1xiPOE22AExEcIe5-er3clOYFHCVCJo6F?usp=sharing) or [Baidu Drive](https://pan.baidu.com/s/1vEOJaLGScgRGaIOeFI3q8w) (code：s8eg)
 2. Visual comparison of reconstructions in the paper（HIGAN）:
