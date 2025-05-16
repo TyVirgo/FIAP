@@ -32,7 +32,6 @@ Close comments in 'demo.sh' and run 'demo.sh' to execute the corresponding comma
 ```
 python main.py --model HIGAN_6BLOCK --save ./test/HIGAN-S_Div2k_tiny_x2 --scale 2 --n_feats 32 --pre_train /Your_Path/HIGAN/pretrained/HIGAN-S_Div2k/higans_x2.pt --data_test Set5+Set14+B100+Urban100+Manga109 --test_only
 ```
-If you need to change the values of other properties and see what they mean, check out './src/option.py' file.
 
 4. More testing commonds can be found in `./src/demo.sh` file and the output results will be sorted in `./experiment/test/`
 
