@@ -15,7 +15,7 @@ conda activate your_env_name
 pip install -r requirements.txt
 ```
 # Model framework 
-1. The network model implementation code (6 blocks and 10 blocks) is located in directory `./model`
+1. The network model implementation code (6 blocks and 10 blocks) is located in directory `./src/model/`
 2. Network model diagram：
 ![image](https://github.com/user-attachments/assets/08431b98-8649-412c-884c-9c405bdd96c1)
 
