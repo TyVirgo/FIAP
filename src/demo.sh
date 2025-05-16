@@ -1,0 +1,38 @@
+###HIGAN-S, HIGAN, and HIGAN-L training commands
+#train_HIGAN-S_6BLOCK_32C_64*64patch_size
+#python main.py --model HIGAN_6BLOCK --save ./train/HIGAN-S_Div2k_x2 --scale 2 --lr 6e-4 --batch_size 32 --patch_size 128 --n_feats 32 --decay 200-400-600-800 --data_test Set5 --reset --epoch=1000
+#python main.py --model HIGAN_6BLOCK --save ./train/HIGAN-S_Div2k_x3 --scale 3 --lr 6e-4 --batch_size 32 --patch_size 192 --n_feats 32 --decay 200-400-600-800 --data_test Set5 --reset --epoch=1000
+#python main.py --model HIGAN_6BLOCK --save ./train/HIGAN-S_Div2k_x4 --scale 4 --lr 6e-4 --batch_size 32 --patch_size 256 --n_feats 32 --decay 200-400-600-800 --data_test Set5 --reset --epoch=1000
+
+#train_HIGAN_10BLOCK_32C_64*64patch_size
+#python main.py --model HIGAN_10BLOCK --save ./train/HIGAN_Div2K_x2 --scale 2 --lr 6e-4 --batch_size 32 --patch_size 128 --n_feats 32 --decay 200-400-600-800 --data_test Set5 --reset --epoch=1000
+#python main.py --model HIGAN_10BLOCK --save ./train/HIGAN_Div2K_x3 --scale 3 --lr 6e-4 --batch_size 32 --patch_size 192 --n_feats 32 --decay 200-400-600-800 --data_test Set5 --reset --epoch=1000
+#python main.py --model HIGAN_10BLOCK --save ./train/HIGAN_Div2K_x4 --scale 4 --lr 6e-4 --batch_size 32 --patch_size 256 --n_feats 32 --decay 200-400-600-800 --data_test Set5 --reset --epoch=1000
+
+#train_HIGAN-L_10BLOCK_32C_64*64patch_size
+#python main.py --model HIGAN_10BLOCK --save ./train/HIGAN-L_Div2K_x2 --scale 2 --lr 6e-4 --batch_size 32 --patch_size 128 --n_feats 48 --decay 200-400-600-800 --data_test Set5 --reset --epoch=1000
+#python main.py --model HIGAN_10BLOCK --save ./train/HIGAN-L_Div2K_x3 --scale 3 --lr 6e-4 --batch_size 32 --patch_size 192 --n_feats 48 --decay 200-400-600-800 --data_test Set5 --reset --epoch=1000
+#python main.py --model HIGAN_10BLOCK --save ./train/HIGAN-L_Div2K_x4 --scale 4 --lr 6e-4 --batch_size 32 --patch_size 256 --n_feats 48 --decay 200-400-600-800 --data_test Set5 --reset --epoch=1000
+
+###HIGAN-S, HIGAN, and HIGAN-L testing commands
+#test_HIGAN-S_6BLOCK_32C_64*64patch_size
+#python main.py --model HIGAN_6BLOCK --save ./test/HIGAN-S_Div2k_tiny_x2 --scale 2 --n_feats 32 --pre_train /home/tyh123456/PycharmProject/HIGAN/pretrained/HIGAN-S_Div2k/HIGANs_x2.pt --data_test Set5+Set14+B100+Urban100+Manga109 --test_only
+#python main.py --model HIGAN_6BLOCK --save ./test/HIGAN-S_Div2k_tiny_x3 --scale 3 --n_feats 32 --pre_train /home/tyh123456/PycharmProject/HIGAN/pretrained/HIGAN-S_Div2k/HIGANs_x3.pt --data_test Set5+Set14+B100+Urban100+Manga109 --test_only
+#python main.py --model HIGAN_6BLOCK --save ./test/HIGAN-S_Div2k_tiny_x4 --scale 4 --n_feats 32 --pre_train /home/tyh123456/PycharmProject/HIGAN/pretrained/HIGAN-S_Div2k/HIGANs_x4.pt --data_test Set5+Set14+B100+Urban100+Manga109 --test_only
+
+#test_HIGAN_10BLOCK_32C_64*64patch_size
+#python main.py --model HIGAN_10BLOCK --save ./test/HIGAN_Div2k_tiny_x2 --scale 2 --n_feats 32 --pre_train /home/tyh123456/PycharmProject/HIGAN/pretrained/HIGAN_Div2K/HIGAN_x2.pt --data_test Set5+Set14+B100+Urban100+Manga109 --test_only
+#python main.py --model HIGAN_10BLOCK --save ./test/HIGAN_Div2k_tiny_x3 --scale 3 --n_feats 32 --pre_train /home/tyh123456/PycharmProject/HIGAN/pretrained/HIGAN_Div2K/HIGAN_x3.pt --data_test Set5+Set14+B100+Urban100+Manga109 --test_only
+#python main.py --model HIGAN_10BLOCK --save ./test/HIGAN_Div2k_tiny_x4 --scale 4 --n_feats 32 --pre_train /home/tyh123456/PycharmProject/HIGAN/pretrained/HIGAN_Div2K/HIGAN_x4.pt --data_test Set5+Set14+B100+Urban100+Manga109 --test_only
+
+#test_HIGAN-L_10BLOCK_32C_64*64patch_size
+#python main.py --model HIGAN_10BLOCK --save ./test/HIGAN-L_Div2k_x2 --scale 2 --n_feats 48 --pre_train /home/tyh123456/PycharmProject/HIGAN/pretrained/HIGAN-L_Div2k/HIGANl_x2.pt --data_test Set5+Set14+B100+Urban100+Manga109 --test_only
+#python main.py --model HIGAN_10BLOCK --save ./test/HIGAN-L_Div2k_x3 --scale 3 --n_feats 48 --pre_train /home/tyh123456/PycharmProject/HIGAN/pretrained/HIGAN-L_Div2k/HIGANl_x3.pt --data_test Set5+Set14+B100+Urban100+Manga109 --test_only
+#python main.py --model HIGAN_10BLOCK --save ./test/HIGAN-L_Div2k_x4 --scale 4 --n_feats 48 --pre_train /home/tyh123456/PycharmProject/HIGAN/pretrained/HIGAN-L_Div2k/HIGANl_x4.pt --data_test Set5+Set14+B100+Urban100+Manga109 --test_only
+
+###Visualization commands
+#LR HR SR input
+#python main.py --model HIGAN_10BLOCK --save ./visual/HIGAN_Div2k_tiny_x2 --scale 2 --n_feats 32 --pre_train /home/tyh123456/PycharmProject/HIGAN/pretrained/HIGAN_Div2K/HIGAN_x2.pt --data_test Set5+Set14+B100+Urban100+Manga109 --test_only --save_results --save_gt
+#python main.py --model HIGAN_10BLOCK --save ./visual/HIGAN_Div2k_tiny_x3 --scale 3 --n_feats 32 --pre_train /home/tyh123456/PycharmProject/HIGAN/pretrained/HIGAN_Div2K/HIGAN_x3.pt --data_test Set5+Set14+B100+Urban100+Manga109 --test_only --save_results --save_gt
+#python main.py --model HIGAN_10BLOCK --save ./visual/HIGAN_Div2k_tiny_x4 --scale 4 --n_feats 32 --pre_train /home/tyh123456/PycharmProject/HIGAN/pretrained/HIGAN_Div2K/HIGAN_x4.pt --data_test Set5+Set14+B100+Urban100+Manga109 --test_only --save_results --save_gt
+
